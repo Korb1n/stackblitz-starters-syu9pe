@@ -1,133 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Cards</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            font-family: Arial, sans-serif;
-            background-color: #f0e6b2;
-            color: #333;
+    <h1>Korbins Obama Force</h1>
+
+<style>
+
+        div.table {
+        display:grid;
+        background-color: brown;
+        height: 1400px;
+        width: 1000px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    div.CARD {
+            background-color: blue;
+            height: 350px;
+            width: 250px;
+            border-radius: 12px;
+            border-color: black;
+            border-width: 8px;
+            border-style: solid;
+            padding-bottom: 5px;
+            border-bottom-width: 16px;
         }
-        .card-container {
-            display: flex;
-            gap: 25px;
-        }
-        .card {
-            width: 260px; 
-            background-color: #fef2c7;
-            border: 2px solid #d2b874;
-            border-radius: 10px;
-            padding: 12px;
-            text-align: center;
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-        }
-        .card-title {
-            font-size: 1.8em; 
-            font-weight: bold;
-            color: #2d59b9;
-            background-color: #ffcc66;
+
+        div.CARD img.mainimage {
+            height: 150px;
+            width: 200px;
             border-radius: 8px;
-            padding: 8px 0;
+            margin: 25px;
+            padding: 0px;
+            margin-top: 0px;
+            margin-bottom: 5px;
         }
-        .card-type {
-            font-size: 1em; 
-            font-weight: bold;
-            color: #333;
-            background-color: #f3e4b0;
-            padding: 4px 8px;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 8px;
+
+        div.CARD h2 {
+            margin: 0px;
+            display: inline;
+
         }
-        .stars {
-            margin: 10px 0;
-            color: #ffcc66;
-            font-size: 1.3em; 
+
+        div.CARD .points {
+            display: inline;
+
         }
-        .card-image {
-            width: 100%; 
-            height: 300px; 
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 5px;
-            background-color: #eaeaea;
+
+        div.CARD .titlebar {
+            margin: 5px;
+
         }
-        .card-image img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain; 
+
+        div.CARD i {
+            display: inline;
+            font-size: 15px;
         }
-        .card-text {
-            font-size: 1.1em; 
-            background-color: #fdf3d1;
-            padding: 8px;
-            border-radius: 5px;
-            margin: 12px 0;
+
+        div.CARD p {
+            margin: 0px;
+            font-size: 17px;
         }
-        .stats {
-            font-size: 1.1em; 
-            font-weight: bold;
-            margin-top: 8px;
+
+        div.CARD img {
+            height: 25px;
+            width: 23px;
+            display: inline;
         }
-        .footer {
-            font-size: 0.9em; 
-            color: #555;
+
+        div.CARD .points {
+            font-size: 25px;
         }
-    </style>
+
+        div.CARD ul {
+            background-color: yellow;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+       div.CARD#card0 {
+        grid-column-start: 2;
+       } 
+       div.CARD#card1 {
+        grid-row-start: 2;
+       }
+       div.CARD#card2{
+        grid-row-start: 3;
+        grid-column-start: 2;
+       }
+       div.CARD#card3{
+        grid-row-start: 2;
+        grid-column-start: 3;
+        
+       }
+</style>
 </head>
 <body>
-
-
-    <div class="card">
-        <div class="card-title">Mrs. Obama</div>
-        <div class="card-type">DARK</div>
-        <div class="stars">★ ★ ★ ★</div>
-        <div class="card-image">
-            <img src="https://risefirstcontent.org/wp-content/uploads/2020/07/michelle-obama-1024.jpg" alt="Dark Blade">
+    <div class="table">
+<div class="CARD" id="card0">
+    <div class="titlebar">
+        <h2>
+            OBAMA
+        </h2>
+        <div class="points">
+            5
         </div>
-        <div class="card-text">
-            <strong>[Female]</strong><br>
-            She woman.
-        <div class="stats">ATK/-100 DEF/-100</div>
-        <div class="footer">11321183 @2024 KORBIN JACKSON</div>
+        <img src="https://cdn.pixabay.com/photo/2022/10/06/12/14/microphone-7502540_1280.png">
     </div>
+    <img src="hhttps://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg"
+        class="mainimage">
 
-    <div class="card">
-        <div class="card-title">Obama</div>
-        <div class="card-type">DARK</div>
-        <div class="stars">★ ★ ★ ★ ★</div>
-        <div class="card-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg" alt="Obama">
-        </div>
-        <div class="card-text">
-            <strong>[FIEND]</strong><br>
-            They say he is a Fiend singing Fe!n, and he is a boss during debates. Draw this card and instantly win.
-        </div>
-        <div class="stats">ATK/∞ DEF/∞</div>
-        <div class="footer">1257252 @2024 KORBIN JACKSON</div>
-    </div>
+    <ul>
+        <li>
+            <p><b>Utilty</b>: Obama </p><i>But Obama</i>
+        </li>
+        <li>
+            <p><b>Health</b>: 1000</p><i>also his Aura</i>
+        </li>
+        <li>
+            <p><b>Attack</b>: Obama Care</p><i>INSTAKILL</i>
+        </li>
+    </ul>
+    
 
-    <div class="card">
-        <div class="card-title">Obama Prism</div>
-        <div class="card-type">DARK</div>
-        <div class="stars">★ ★ ★ ★</div>
-        <div class="card-image">
-            <img src="path_to_obama_prism_image.jpg" alt="Obama Prism">
+</div>
+<div class="CARD" id="card1">
+    <div class="titlebar">
+        <h2>
+            Obama Sphere
+        </h2>
+        <div class="points">
+            5
         </div>
-        <div class="card-text">
-            <strong>[FAIRY]</strong><br>
-            What he lacks in attack he makes up for in Defense, his defense is the best ever seen.
-        </div>
-        <div class="stats">ATK/0 DEF/10000</div>
-        <div class="footer">11321183 @1996 KAZUKI TAKAHASHI</div>
+        <img src="https://static.wikia.nocookie.net/comverse/images/8/81/Obama_sphere.png/revision/latest?cb=20220523201223">
     </div>
+    <img src="https://images.squarespace-cdn.com/content/v1/530286f8e4b0d1c4964d040e/1438439557413-JY82672UZXCO2LN6QMY2/image-asset.jpeg?format=2500w"
+        class="mainimage">
+
+    <ul>
+        <li>
+            <p><b>Utilty</b>: Can roll around like a sigma</p><i>Flattens you makes you harder to hit</i>
+        </li>
+        <li>
+            <p><b>Health</b>: 1M</p><i>Sphere</i>
+        </li>
+        <li>
+            <p><b>Attack</b>: Charges you</p><i>flings you accross battlefield</i>
+        </li>
+    </ul>
+
+</div>
+<div class="CARD" id="card2">
+    <div class="titlebar">
+        <h2>
+            AMY SCHUMER
+        </h2>
+        <div class="points">
+            5
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2022/10/06/12/14/microphone-7502540_1280.png">
+    </div>
+    <img src="https://risefirstcontent.org/wp-content/uploads/2020/07/michelle-obama-1024.jpg"
+        class="mainimage">
+
+    <ul>
+        <li>
+            <p><b>Utilty</b>: Hates happiness</p><i>Makes her man</i>
+        </li>
+        <li>
+            <p><b>Health</b>: 1M</p><i>also her calorie intake</i>
+        </li>
+        <li>
+            <p><b>Attack</b>:Ruins your school lunch</p><i>INSTAKILL</i>
+        </li>
+    </ul>
+
+</div>
+<div class="CARD" id="card3">
+    <div class="titlebar">
+        <h2>
+            AMY SCHUMER
+        </h2>
+        <div class="points">
+            5
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2022/10/06/12/14/microphone-7502540_1280.png">
+    </div>
+    <img src="https://images.cults3d.com/zJY09osEKnHm0t13311z1iw7kWo=/516x516/filters:no_upscale():format(webp)/https://fbi.cults3d.com/uploaders/21749226/illustration-file/f2255c68-18b4-4240-b08f-44cfc8ff521e/baller.jpg"
+        class="mainimage">
+
+    <ul>
+        <li>
+            <p><b>Utilty</b>: Subs to its_dj_lmb</p><i>only good thing</i>
+        </li>
+        <li>
+            <p><b>Health</b>: 1M</p><i>Stop posting about Baller</i>
+        </li>
+        <li>
+            <p><b>Attack</b>: Talks about Baller</p><i>disgusts audience</i>
+        </li>
+    </ul>
+
 </div>
 
+    </div>
+
 </body>
+
+
+
 </html>
