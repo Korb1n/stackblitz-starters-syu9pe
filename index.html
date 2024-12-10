@@ -1,126 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Cards</title>
     <style>
-      body {
-        display: flex;
-        justify-content: center;
-        font-family: Arial, sans-serif;
-        background-color: #f0e6b2;
-        color: #333;
-      }
-      .card-container {
-        display: flex;
-        gap: 25px;
-      }
-      .card {
-        width: 260px;
-        background-color: #fef2c7;
-        border: 2px solid #d2b874;
-        border-radius: 10px;
-        padding: 12px;
-        text-align: center;
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-      }
-      .card-title {
-        font-size: 1.8em;
-        font-weight: bold;
-        color: #2d59b9;
-        background-color: #ffcc66;
-        border-radius: 8px;
-        padding: 8px 0;
-      }
-      .card-type {
-        font-size: 1em;
-        font-weight: bold;
-        color: #333;
-        background-color: #f3e4b0;
-        padding: 4px 8px;
-        border-radius: 5px;
-        display: inline-block;
-        margin-top: 8px;
-      }
-      .stars {
-        margin: 10px 0;
-        color: #ffcc66;
-        font-size: 1.3em;
-      }
-      .card-image img {
-        width: 150px;
-      }
-      .card-text {
-        font-size: 1.1em;
-        background-color: #fdf3d1;
-        padding: 8px;
-        border-radius: 5px;
-        margin: 12px 0;
-      }
-      .stats {
-        font-size: 1.1em;
-        font-weight: bold;
-        margin-top: 8px;
-      }
-      .footer {
-        font-size: 0.9em;
-        color: #555;
-      }
+        body {
+            display: flex;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0e6b2;
+            color: #333;
+        }
+        .card-container {
+            display: flex;
+            gap: 25px;
+        }
+        .card {
+            width: 260px; 
+            background-color: #fef2c7;
+            border: 2px solid #d2b874;
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            font-size: 1.8em; 
+            font-weight: bold;
+            color: #2d59b9;
+            background-color: #ffcc66;
+            border-radius: 8px;
+            padding: 8px 0;
+        }
+        .card-type {
+            font-size: 1em; 
+            font-weight: bold;
+            color: #333;
+            background-color: #f3e4b0;
+            padding: 4px 8px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 8px;
+        }
+        .stars {
+            margin: 10px 0;
+            color: #ffcc66;
+            font-size: 1.3em; 
+        }
+        .card-image {
+            width: 100%; 
+            height: 300px; 
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            background-color: #eaeaea;
+        }
+        .card-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; 
+        }
+        .card-text {
+            font-size: 1.1em; 
+            background-color: #fdf3d1;
+            padding: 8px;
+            border-radius: 5px;
+            margin: 12px 0;
+        }
+        .stats {
+            font-size: 1.1em; 
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        .footer {
+            font-size: 0.9em; 
+            color: #555;
+        }
     </style>
-  </head>
-  <body>
-    <div class="card-container">
-      <div class="card">
-        <div class="card-title">Dark Blade</div>
+</head>
+<body>
+
+
+    <div class="card">
+        <div class="card-title">Mrs. Obama</div>
         <div class="card-type">DARK</div>
         <div class="stars">★ ★ ★ ★</div>
         <div class="card-image">
-          <img
-            src="https://uploads3.yugioh.com/card_images/4789/detail/Dark-Blade_FL.jpg?1394743301"
-            alt="Dark Blade"
-          />
+            <img src="https://risefirstcontent.org/wp-content/uploads/2020/07/michelle-obama-1024.jpg" alt="Dark Blade">
         </div>
         <div class="card-text">
-          <strong>[WARRIOR]</strong><br />
-          They say he is a dragon manipulating warrior from the dark world. His
-          attack is tremendous, using his great swords with vicious power.
-        </div>
-        <div class="stats">ATK/1800 DEF/1500</div>
-        <div class="footer">11321183 @1996 KAZUKI TAKAHASHI</div>
-      </div>
+            <strong>[Female]</strong><br>
+            She woman.
+        <div class="stats">ATK/-100 DEF/-100</div>
+        <div class="footer">11321183 @2024 KORBIN JACKSON</div>
+    </div>
 
-      <div class="card">
+    <div class="card">
         <div class="card-title">Obama</div>
         <div class="card-type">DARK</div>
         <div class="stars">★ ★ ★ ★ ★</div>
         <div class="card-image">
-          <img src="path_to_obama_image.jpg" alt="Obama" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg" alt="Obama">
         </div>
         <div class="card-text">
-          <strong>[FIEND]</strong><br />
-          They say he is a Fiend singing Fe!n, and he is a boss during debates.
-          Draw this card and instantly win.
+            <strong>[FIEND]</strong><br>
+            They say he is a Fiend singing Fe!n, and he is a boss during debates. Draw this card and instantly win.
         </div>
         <div class="stats">ATK/∞ DEF/∞</div>
-        <div class="footer">1257252 @1996 KAZUKI TAKAHASHI</div>
-      </div>
+        <div class="footer">1257252 @2024 KORBIN JACKSON</div>
+    </div>
 
-      <div class="card">
+    <div class="card">
         <div class="card-title">Obama Prism</div>
         <div class="card-type">DARK</div>
         <div class="stars">★ ★ ★ ★</div>
         <div class="card-image">
-          <img src="path_to_obama_prism_image.jpg" alt="Obama Prism" />
+            <img src="path_to_obama_prism_image.jpg" alt="Obama Prism">
         </div>
         <div class="card-text">
-          <strong>[FAIRY]</strong><br />
-          What he lacks in attack he makes up for in Defense, his defense is the
-          best ever seen.
+            <strong>[FAIRY]</strong><br>
+            What he lacks in attack he makes up for in Defense, his defense is the best ever seen.
         </div>
         <div class="stats">ATK/0 DEF/10000</div>
         <div class="footer">11321183 @1996 KAZUKI TAKAHASHI</div>
-      </div>
     </div>
-  </body>
+</div>
+
+</body>
 </html>
